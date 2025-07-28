@@ -23,7 +23,6 @@ logger.addHandler(console_handler)
 logger.addHandler(file_handler)
 
 def load_params(params_path: str) -> dict:
-    """Load parameters from a YAML file."""
     try:
         with open(params_path, 'r') as file:
             params = yaml.safe_load(file)
@@ -40,7 +39,6 @@ def load_params(params_path: str) -> dict:
         raise
 
 def load_data(data_url: str) -> pd.DataFrame:
-    """Load data from a CSV file."""
     try:
         df = pd.read_csv(data_url)
         logger.debug('Data loaded from %s', data_url)
