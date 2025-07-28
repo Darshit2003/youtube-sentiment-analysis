@@ -8,3 +8,7 @@ setup(
     packages=find_packages(),
     install_requires=[]
 )
+
+
+#ECR Key
+# 668185312305.dkr.ecr.ap-south-1.amazonaws.com/mlproject 
